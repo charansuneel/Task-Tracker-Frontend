@@ -1,0 +1,25 @@
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .search-symbol {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .query-type {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  

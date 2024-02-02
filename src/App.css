@@ -1,38 +1,103 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  background-color:#789461;
+  /*background-color:#629dca /* Set your desired background color */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title{
+  color:#DBE7C9;
+  font-size: 48px;
+  font-weight: bold;
+  background-color:#294B29;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TaskTracker{
   display: flex;
-  flex-direction: column;
+  padding: 25px;
+}
+.TaskContainer{
+  flex: 40%;
+  /* padding: 10px; Adjust padding as needed */
+  
+}
+.Sidediv{
+  flex: 25%;
+  padding: 10px;
+  /* background-color: #789461; */
+  overflow-y: auto;
+  max-height: 500px;
+  
+  position: sticky;
+  /* top: 30px; */
+    
+  
+}
+.SelectedTaskDetails{
+  background-color: #c7cf9b;
+  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.TaskBox{
+  background-color:#c7cf9b;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+
+
+.TruncatedDescription {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  padding-left: 5%;
+  padding-right: 7.5%;
+}
+.search-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  /* margin-right: 8px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-symbol {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.query-type {
+  padding: 8px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  background-color: #fff;
+  cursor: pointer;
+}
+.create{
+  background-color: #c7cf9b; 
+}
+.create p{
+  
+  /* color: #ccc; */
+  margin: 0px;;
+}
+.create textarea{
+  min-height: 60px;
+}
+.create button{
+  margin: 20px;
+}
+.CompletedTask{
+  background-color: rgb(234, 81, 81);
 }
