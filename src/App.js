@@ -217,6 +217,8 @@ function App() {
       const response = await axios.post(`${API_BASE_URL}`, formData);
       console.log("Task created successfully:", response.data);
       setShowCreatePage(false);
+      setShowPagination(true);
+      fetchTasksByPage();
       setCreateMessage("Task created successfully.");
       setFormData({
         title: '',

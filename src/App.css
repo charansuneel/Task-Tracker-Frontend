@@ -101,3 +101,6 @@ body {
 .CompletedTask{
   background-color: rgb(234, 81, 81);
 }
+.Pagination{
+  margin-bottom: 20px;
+}
